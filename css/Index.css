@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+  }
+  
+  div.top-bg {
+    background: url("../images/Voted\ resources.jpeg resou");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    opacity: 0.9;
+  }
+  
+  div.top-bg-trans {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    position: absolute;
+  }
+  
+  nav {
+    display: flex; 
+    padding: 20px 60px;
+  }
+  
+  nav .logo {
+    flex: 1;
+  }
+  
+  nav .links {
+    flex: 3;
+    list-style: none;
+    text-align: right;
+  }
+  
+  nav .links li {
+    display: inline;
+    
+  }
+  
+  nav .links li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+  }
+  
+  nav .links li a.active {
+    color: darkgray;
+  }
+  
+  nav .links li a:hover {
+    padding-bottom: 5px;
+    color: slategray;
+    border-bottom: 2px solid #ffffff;
+    transition: 5s all;
+  }
+  
+  nav .links li:last-child a {
+    background-color: green;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  
+  nav .links li:last-child a:hover {
+    padding: 10px;
+  }
+  
+  div.top-desc {
+    padding: 50px 60px;
+    width: 600px;
+  }
+  
+  div.top-desc h1 {
+    color: white;
+    font-size: 50px;
+  }
+  
+  div.top-desc p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  div.top-desc .btn-default {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
