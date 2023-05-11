@@ -137,7 +137,7 @@
   padding: 20px;
 } 
 .how .container .content img{
-  width: 500px;
+  width: 50%;
   animation: slideRight 1s ease forwards;
 
 }
@@ -248,11 +248,11 @@ button[type="submit"]
     line-height: 20px;
   }
 
-  .how .container .content .move{
-    position: absolute;
-    bottom: -1400px;
-    margin-bottom: 10px;
-  }
+   
+    
+  
+    
+
 
   .how .container .content .cont{
     margin-top: 100px;
