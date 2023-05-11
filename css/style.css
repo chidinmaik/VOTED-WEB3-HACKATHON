@@ -238,7 +238,7 @@ button[type="submit"]
     
   }
   .how .container .content img{
-    width: 50%;
+    width: 70%;
   }
   .how .container .content img:nth-child(){
     display: none;
