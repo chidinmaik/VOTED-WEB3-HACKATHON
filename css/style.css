@@ -65,7 +65,7 @@ body{
   transition: 2s;
 }
 
-.header .btn-1 a {
+.header .signup a {
   color: #fff;
   padding: 5px;
 }
@@ -209,7 +209,8 @@ body{
 
   padding: 20px;
   background-blend-mode: 50%;
-  margin-left: 15%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
   justify-content: center;
   justify-self: center;
@@ -282,6 +283,10 @@ button[type="submit"]
     left: 0;
     width: 100%;
     
+  }
+
+  .header .signup {
+    display: none;
   }
   .hero{
        display: grid; 
