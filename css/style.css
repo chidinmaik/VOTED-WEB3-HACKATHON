@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 *{
+  
   padding: none;
 }
 body{
+  font-family: 'Titillium Web', sans-serif;
   padding: none;
   background: #C0ECC2;
  
