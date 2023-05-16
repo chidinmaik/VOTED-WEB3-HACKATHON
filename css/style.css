@@ -1,33 +1,70 @@
 *{
   padding: none;
 }
+body{
+  padding: none;
+  background: #C0ECC2;
+ 
+  color: #000000;
+}
 .header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
-  background: transparent;
+ 
+  background: #C0ECC2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   color: black;
- 
+  animation: slideTop 5s ease forwards ;
+  animation-delay: calc(.2s * var(--i));
 
 }
 
-.header .btn-1 {
+.header .signup {
  
-  background-color: #008751;
+  background-color: #018206;
   margin: 10px;
   text-align: center;
   justify-content: center;
   padding-right: 20px;
    border: none;
+   padding: 7px;
+   border: 2px solid #018206;
   border-radius: 5px;
 
 } 
+
+.header .signup:hover {
+  background-color: transparent;
+  color: #018206;
+  transition: 2s;
+}
+
+
+.header .signin {
+ 
+  background-color: transparent;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 7px;
+  text-align: center;
+  border: 2px solid #018206;
+  border-radius: 5px;
+  color: #018206;
+
+} 
+.header .signin:hover {
+  background-color: #018206;
+  color: #fff;
+  transition: 2s;
+}
+
 .header .btn-1 a {
   color: #fff;
   padding: 5px;
@@ -35,21 +72,21 @@
 
 .navbar a {
   
-  display: inline-block;
+  display: flexbox;
   font-size: 14px;
   color: black;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 15px;
-  animation: slideTop 5s ease forwards ;
-  animation-delay: calc(.2s * var(--i));
+  margin: 10px;
+  
 
 
 }
 
 .navbar a:hover,
 .navbar a.active{
-  color: #008751;
+  color: #018206;
+  text-decoration: underline;
 
 }
 .logo{
@@ -58,29 +95,29 @@
   text-decoration: none;
   font-weight: 600;
   cursor: default;
-  opacity: 0;
+  margin-left: 20px;
   animation: slideBottom 5s ease forwards ;
 }
 /*******HERO STYLING BEGINS HERE ****/
 
 .hero{
-   
-  position: relative;
+   position: relative;
+  margin-top: 50px;
   width: 100%;
   height: 100%;
   display: flex;
-  line-height: 100px;
   justify-content: space-between;
   align-items: left;
-  padding: 70px 10% 0 ;
-  background-color: #EEEEEE;
+  padding: 70px 10px 20px ;
+  background-image: linear-gradient(to left, #01820556, #C0ECC2);
   padding-bottom: 20px;
   animation: slideLeft 5s ease forwards ;
  
 }
 
 .hero-img{
-  width: 50%;
+  width: 40%;
+  opacity: 50%;
   
 }
 .hero-content{
@@ -93,9 +130,20 @@
 
 }
 .hero-content h1{
-  font-size: 56px;
+  font-size: 40px;
   animation: slideRight 1s ease-in-out forwards ;
   animation-delay: .7s;
+  color: #018206;
+  font-weight: 800;
+  margin: 1px 5px 40px 10px;
+}
+.hero-content p{
+  margin-left: 10px;
+  font-size: 12px;
+  margin-top: -30px;
+  line-height: 30px;
+  
+  
 }
 .hero-content h6{
   font-size: 10px;
@@ -106,9 +154,9 @@
 
 .btn{
   display: inline-block;
-  background-color: #008751;
+  background-color: #018206;
   padding: 12px 28px;
-  box-shadow: 0 0 10px #008751;
+  box-shadow: 0px 0px 10px #008751;
   border-radius: 20px;
   color: #fff;
   text-decoration: none;
@@ -117,38 +165,60 @@
   font-weight: 600;
   
 }
+
 /*******HOW IT WORKS styling here******/
 
 .how p{
+  color: #018206;
   text-align: center;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   
 }
 .how .container {
   display: flex;
  margin-bottom:20px ;
- /*box-shadow:  0px 0px 15px black;*/
+ 
     
 }
 
 .how .container .content{
   flex: 50%;
   padding: 20px;
+  margin: 10px;
+  box-shadow:  0px 0px 15px #0182055a;
+  background-image: linear-gradient(to top, #C0ECC2,  #92e295);
 } 
 .how .container .content img{
-  width: 500px;
+  width: 20%;
   animation: slideRight 1s ease forwards;
 
 }
+.how .content h5 {
+  padding: 5px;
+  font-weight: 500;
 
-.how .container .content h6 {
-  margin-top: 20%;
-
+}
+.how .content h6 {
+  padding: 30px;
   font-weight: 300;
 
 }
 
+.how .content-1{
+
+  padding: 20px;
+  background-blend-mode: 50%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
+  width: fit-content;
+  box-shadow:  0px 0px 15px #0182055a;
+  background-image: linear-gradient(to top, #C0ECC2,  #92e295);
+}
 
 
 
@@ -161,12 +231,15 @@
 input[type="text"],
 input[type="email"],
 input[type="file"]
-{
-  width: 300px;
+{ 
+  background-color: #C0ECC2;
+  width: 350px;
+  height: 42px;
   padding: 10px;
   border-radius: 10px;
-  border: none;
-  box-shadow: 0px 1px 2px #008751;
+  font-weight: 100;
+  border: 1px solid #018206;
+  
 
 }
 
@@ -176,7 +249,7 @@ button[type="submit"]
   height: 40px;
   margin-top: 30px;
   border-radius: 10px;
-  background-color: #008751;
+  background-color: #018206;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -202,6 +275,14 @@ button[type="submit"]
 }
 
 @media (min-width: 320px) and (max-width: 900px) {
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+  }
   .hero{
        display: grid; 
       width: 100%;
@@ -209,9 +290,14 @@ button[type="submit"]
       align-items: center;
       padding-top: 10%;
       padding-bottom: 10%;
+      text-align: center;
     
      
     
+  }
+
+  .hero .hero-content p{
+    margin: auto;
   }
 
   .hero-img{
@@ -226,6 +312,7 @@ button[type="submit"]
       margin-top: 30px;
       max-width: 200%;
       border: 2px solid white;
+      display: none;
   
       
       
@@ -238,7 +325,7 @@ button[type="submit"]
     
   }
   .how .container .content img{
-    width: 70%;
+    width: 30%;
   }
   .how .container .content img:nth-child(){
     display: none;
@@ -248,11 +335,7 @@ button[type="submit"]
     line-height: 20px;
   }
 
-   
-    
   
-    
-
 
   .how .container .content .cont{
     margin-top: 100px;
